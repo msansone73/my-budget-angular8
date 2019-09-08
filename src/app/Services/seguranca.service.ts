@@ -13,7 +13,9 @@ export class SegurancaService {
 
    usuario:Usuario
 
-  baseUrl = 'http://localhost:8080/mybudget/security'
+  //baseUrl = 'http://localhost:8080/mybudget/security'
+  baseUrl = 'https://basic-studing.herokuapp.com/mybudget/security'
+  
   constructor(private http:HttpClient){}
 
   httpOptions={
