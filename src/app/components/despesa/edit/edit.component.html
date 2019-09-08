@@ -1,0 +1,26 @@
+<div  class="container">
+    <div class="row">
+        <div class="col">Id:</div>
+        <div class="col"><input [(ngModel)]="despesa.id" readonly/></div>
+    </div>
+    <div class=" row">
+        <div class="col">Nome:</div>
+        <div class="col"><input [(ngModel)]="despesa.name" /></div>
+    </div>
+    <div class="row">
+        <div class="col">Valor:</div>
+        <div class="col"><input [(ngModel)]="despesa.value" /></div>
+    </div>
+    <div class="row">
+        <div class="col">Categoria:</div>
+        <div class="col"><input [(ngModel)]="despesa.categoria.name" /></div>
+    </div>
+    <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+    <div class="row">
+        <div class="col"></div>
+        <div class="col"><button (click)="salvar()">Salvar</button></div>
+    </div>
+</div>

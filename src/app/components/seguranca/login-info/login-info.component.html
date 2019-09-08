@@ -1,0 +1,7 @@
+<p *ngIf="this.cookieService.get('usuario').length!=0">
+    User: {{this.cookieService.get('usuario')}}
+    <button (click)="logout()" >LOGOUT</button>
+</p>
+<p *ngIf="this.cookieService.get('usuario').length==0">
+    <a class="nav-link" routerLink="/login">LOGIN</a>
+</p>

@@ -1,0 +1,19 @@
+<app-edit salvou="onSalvou($event)" [hidden]="!showEdit" [despesa]="editDespesa"></app-edit>
+<table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let xdespesa of this.despesas">
+          <tr>
+            <th scope="row">{{xdespesa.id}}</th>
+            <td>{{xdespesa.name}}</td>
+            <td>{{xdespesa.value}}</td>
+            <td><button (click)="this.editarDespesa(xdespesa)">editar</button></td>
+          </tr>
+        </tbody>
+      </table>
